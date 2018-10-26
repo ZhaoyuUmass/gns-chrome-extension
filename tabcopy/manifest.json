@@ -1,0 +1,37 @@
+{
+ "name": "GNS",
+ "description": "",
+ "version": "0.0.0.9",
+ "manifest_version": 2,
+
+  "chrome_url_overrides" : {
+    "newtab": "index.html"
+  },
+
+  
+  "chrome_settings_overrides": {
+    "search_provider": {
+        "name": "GNS",
+        "keyword": "g",
+        "favicon_url": "http://www.opengns.com/images/arch.png",
+        "search_url": "http://www.opengns.com/?q={searchTerms}",
+        "encoding": "UTF-8",
+        "is_default": true
+    }
+   },
+   
+  "permissions": [
+          "*://*.opengns.com/",
+          "webRequest",
+          "webRequestBlocking",
+          "tabs",
+          "storage"
+    ],
+
+  "background": {
+    "scripts": ["jquery.min.js", "browser.startup.js"],
+    "persistent": true
+  }
+  
+
+}

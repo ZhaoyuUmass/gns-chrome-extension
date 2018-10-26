@@ -1,0 +1,14 @@
+<html>
+    <head>
+    </head>
+    <script type="text/javascript">
+        function printDomainName(){
+            document.getElementById('name-placeholder').innerHTML = window.location.hostname;
+        }
+    </script>
+    <body>
+        <p> <div id="name-placeholder" style=" display:inline"></div> is not configured yet. You could configure this domain using <a href="http://gns.opengns.com" > Managed DNS </a>
+    </body>
+    <script> printDomainName();</script>
+</html>
+
